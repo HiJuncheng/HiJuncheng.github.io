@@ -51,11 +51,17 @@
   
 
   
+    
+      
+    
+
+    
+  
 
   
     
     
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -93,7 +99,7 @@
 <meta property="og:description" content="锚点测试- 锚点2这是注脚测试 ^1
 锚点测试这是锚点2网址测试 百度本地图片测试">
 <meta property="og:image" content="http://25.io/smaller/favicon.ico">
-<meta property="og:updated_time" content="2016-06-26T10:18:00.000Z">
+<meta property="og:updated_time" content="2016-06-26T13:12:47.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客测试">
 <meta name="twitter:description" content="锚点测试- 锚点2这是注脚测试 ^1
@@ -317,8 +323,35 @@
 <p>或者加上换行符,<br><br>也可以换行。</p>
 <hr>
 <h4 id="标签测试"><a href="#标签测试" class="headerlink" title="标签测试"></a>标签测试</h4><p>Tags: 标签1</p>
-<pre><code>代码测试
-第二行代码
+<pre><code>//代码测试
+//第二行代码
+bool AppDelegate::applicationDidFinishLaunching() {
+    // initialize director
+    auto director = Director::getInstance();
+    auto glview = director-&gt;getOpenGLView();
+    if(!glview) {
+        glview = GLViewImpl::createWithRect(&quot;HelloCpp&quot;, Rect(0, 0, 960, 640));
+        director-&gt;setOpenGLView(glview);
+    }
+
+    director-&gt;getOpenGLView()-&gt;setDesignResolutionSize(960, 640, ResolutionPolicy::SHOW_ALL);
+
+    // turn on display FPS
+    director-&gt;setDisplayStats(true);
+
+    // set FPS. the default value is 1.0/60 if you don&apos;t call this
+    director-&gt;setAnimationInterval(1.0 / 60);
+
+    FileUtils::getInstance()-&gt;addSearchPath(&quot;res&quot;);
+
+    // create a scene. it&apos;s an autorelease object
+    auto scene = HelloWorld::createScene();
+
+    // run
+    director-&gt;runWithScene(scene);
+
+    return true;
+}
 </code></pre><p>##表格测试<br>| 第一列 1 | 第二列 2 | 第三列 3 |<br>| :——– | :——–: | ——–: |<br>| <em>内容1</em> | <strong>内容2</strong> | <del>内容3</del> |</p>
 <table>
 <thead>
