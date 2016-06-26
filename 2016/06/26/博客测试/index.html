@@ -99,7 +99,7 @@
 <meta property="og:description" content="锚点测试- 锚点2这是注脚测试 ^1
 锚点测试这是锚点2网址测试 百度本地图片测试">
 <meta property="og:image" content="http://25.io/smaller/favicon.ico">
-<meta property="og:updated_time" content="2016-06-26T13:12:47.000Z">
+<meta property="og:updated_time" content="2016-06-26T13:17:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客测试">
 <meta name="twitter:description" content="锚点测试- 锚点2这是注脚测试 ^1
@@ -323,36 +323,37 @@
 <p>或者加上换行符,<br><br>也可以换行。</p>
 <hr>
 <h4 id="标签测试"><a href="#标签测试" class="headerlink" title="标签测试"></a>标签测试</h4><p>Tags: 标签1</p>
-<pre><code>//代码测试
-//第二行代码
-bool AppDelegate::applicationDidFinishLaunching() {
-    // initialize director
-    auto director = Director::getInstance();
-    auto glview = director-&gt;getOpenGLView();
-    if(!glview) {
-        glview = GLViewImpl::createWithRect(&quot;HelloCpp&quot;, Rect(0, 0, 960, 640));
+<pre><code class="C++"><span class="comment">//代码测试</span>
+<span class="comment">//第二行代码</span>
+<span class="keyword">bool</span> AppDelegate::applicationDidFinishLaunching() {
+    <span class="comment">// initialize director</span>
+    <span class="keyword">auto</span> director = Director::getInstance();
+    <span class="keyword">auto</span> glview = director-&gt;getOpenGLView();
+    <span class="keyword">if</span>(!glview) {
+        glview = GLViewImpl::createWithRect(<span class="string">"HelloCpp"</span>, Rect(<span class="number">0</span>, <span class="number">0</span>, <span class="number">960</span>, <span class="number">640</span>));
         director-&gt;setOpenGLView(glview);
     }
 
-    director-&gt;getOpenGLView()-&gt;setDesignResolutionSize(960, 640, ResolutionPolicy::SHOW_ALL);
+    director-&gt;getOpenGLView()-&gt;setDesignResolutionSize(<span class="number">960</span>, <span class="number">640</span>, ResolutionPolicy::SHOW_ALL);
 
-    // turn on display FPS
-    director-&gt;setDisplayStats(true);
+    <span class="comment">// turn on display FPS</span>
+    director-&gt;setDisplayStats(<span class="literal">true</span>);
 
-    // set FPS. the default value is 1.0/60 if you don&apos;t call this
-    director-&gt;setAnimationInterval(1.0 / 60);
+    <span class="comment">// set FPS. the default value is 1.0/60 if you don't call this</span>
+    director-&gt;setAnimationInterval(<span class="number">1.0</span> / <span class="number">60</span>);
 
-    FileUtils::getInstance()-&gt;addSearchPath(&quot;res&quot;);
+    FileUtils::getInstance()-&gt;addSearchPath(<span class="string">"res"</span>);
 
-    // create a scene. it&apos;s an autorelease object
-    auto scene = HelloWorld::createScene();
+    <span class="comment">// create a scene. it's an autorelease object</span>
+    <span class="keyword">auto</span> scene = HelloWorld::createScene();
 
-    // run
+    <span class="comment">// run</span>
     director-&gt;runWithScene(scene);
 
-    return true;
+    <span class="keyword">return</span> <span class="literal">true</span>;
 }
-</code></pre><p>##表格测试<br>| 第一列 1 | 第二列 2 | 第三列 3 |<br>| :——– | :——–: | ——–: |<br>| <em>内容1</em> | <strong>内容2</strong> | <del>内容3</del> |</p>
+</code></pre>
+<p>##表格测试<br>| 第一列 1 | 第二列 2 | 第三列 3 |<br>| :——– | :——–: | ——–: |<br>| <em>内容1</em> | <strong>内容2</strong> | <del>内容3</del> |</p>
 <table>
 <thead>
 <tr>
